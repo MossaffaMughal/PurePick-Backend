@@ -77,10 +77,10 @@ WSGI_APPLICATION = "backend.wsgi.application"
 DATABASES = {
      "default": {
     "ENGINE": "django.db.backends.postgresql",
-    "NAME": "PurePickDB",  # Name of your database in pgAdmin
-    "USER": "postgres",    # Your PostgreSQL username
-    "PASSWORD": "alBaseer",  # Your PostgreSQL password
-    "HOST": "127.0.0.1",   # Typically localhost for local development
+    "NAME": "DB_NAME",  # Name of your database in pgAdmin
+    "USER": "USERNAME",    # Your PostgreSQL username
+    "PASSWORD": "PASSWORD",  # Your PostgreSQL password
+    "HOST": "HOST",   # Typically localhost for local development
     "PORT": "5432",        # Default PostgreSQL port
     # "OPTIONS": {
     #     "driver": "pg8000",  # Specify the pg8000 driver
