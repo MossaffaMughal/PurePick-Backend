@@ -25,11 +25,9 @@ SECRET_KEY = "django-insecure-@3*&v%^)3nq1t80^ef3j3b1=ux5@(^7m3g$*_t4_cm7v($u%ra
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost',]
-
+ALLOWED_HOSTS = ['192.168.68.20', 'localhost', '127.0.0.1', '192.168.1.5', '192.168.48.20', '192.168.1.7']
 
 # Application definition
-
 INSTALLED_APPS = [
     "django.contrib.admin",
     "django.contrib.auth",
@@ -77,17 +75,16 @@ WSGI_APPLICATION = "backend.wsgi.application"
 DATABASES = {
      "default": {
     "ENGINE": "django.db.backends.postgresql",
-    "NAME": "DB_NAME",  # Name of your database in pgAdmin
-    "USER": "USERNAME",    # Your PostgreSQL username
-    "PASSWORD": "PASSWORD",  # Your PostgreSQL password
-    "HOST": "HOST",   # Typically localhost for local development
+    "NAME": "PurePickDB",  # Name of your database in pgAdmin
+    "USER": "postgres",    # Your PostgreSQL username
+    "PASSWORD": "postgres",  # Your PostgreSQL password
+    "HOST": "127.0.0.1",   # Typically localhost for local development
     "PORT": "5432",        # Default PostgreSQL port
     # "OPTIONS": {
     #     "driver": "pg8000",  # Specify the pg8000 driver
     # },
 }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
